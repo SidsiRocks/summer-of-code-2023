@@ -104,5 +104,15 @@ JS:
 	host: moodle.iitd.ac.in
 	filename: /lib/javascript.php/1629522517/course/format/weeks/format.js
 	
+After downloading course introduction file"
+	GET:
+	URL: https://moodle.iitd.ac.in/mod/resource/view.php?id=100088
+	Status: 303
+	
+	GET:	
+	scheme: https 
+	host: moodle.iitd.ac.in
+	filename: /pluginfile.php/355194/mod_resource/content/1/PYL101-introduction-new.pdf
+	Address:10.10.17.1:443
 	
 	
