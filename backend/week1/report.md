@@ -83,7 +83,26 @@ HTML:
 	filename: /localjs/MathJax/config/AMSmath.js
 	V: 2.7.4
 	Address: 10.10.17.1:443
+
+After Selecting PYL Page:
+	GET:
+	Status:200
+	Version: HTTP/1.1
+	Transferred: 13.81 kB (94.47 kB size)
+	Referrer Policy: strict-origin-when-cross-origin
+	Request Priority: Highest
 	
+JS:
+	GET:
+	scheme: https
+	host: moodle.iitd.ac.in
+	filename: /lib/requirejs.php/1629522517/core/first.js
+	
+	#multiple requests this time all shown as cached except the one below
+	GET:
+	scheme: https
+	host: moodle.iitd.ac.in
+	filename: /lib/javascript.php/1629522517/course/format/weeks/format.js
 	
 	
 	
