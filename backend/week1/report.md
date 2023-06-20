@@ -49,11 +49,41 @@ JS:
 	3.17.2/event-tap/event-tap-min.js
 	
 Images:
-	scheme:https
+	scheme: https
 	host:moodle.iitd.ac.in
 	filename: /theme/image.php/clean/core/1629522517/help
 	
 	URL for other image:
 	https://moodle.iitd.ac.in/theme/image.php/clean/theme/1629522517/favicon
+	
+After login page:
+HTML:
+	POST:
+	URL: https://moodle.iitd.ac.in/login/index.php
+	Status:303
+	
+	GET:
+	#prior requests where all GET only the one above was post
+	Status:303
+	host: moodle.iitd.ac.in
+	filename: /login/index.php
+	Address: 10.10.17.1:443
+	
+	GET:
+	Status:200
+	host:moodle.iitd.ac.in
+	Filename: /my/
+	Address: Same as prevs
+	
+	# few more erros of this kind trying to acess MathJax
+	GET:
+	Status: 404
+	scheme: https
+	host: moodle.iitd.ac.in
+	filename: /localjs/MathJax/config/AMSmath.js
+	V: 2.7.4
+	Address: 10.10.17.1:443
+	
+	
 	
 	
